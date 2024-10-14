@@ -3,7 +3,7 @@ name: Sync branch to OPAL Plus
 on:
   push:
     branches:
-      - master
+      - config-path-test
   workflow_dispatch:
 
 jobs:
