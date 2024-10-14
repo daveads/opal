@@ -27,4 +27,3 @@ repos:
     hooks:
       - id: docformatter
         language: python
-        args: [--in-place]
