@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v5.0.0
     hooks:
         - id: check-merge-conflict
         - id: check-toml
@@ -26,4 +26,5 @@ repos:
     rev: v1.7.1
     hooks:
       - id: docformatter
+        language: python
         args: [--in-place]
