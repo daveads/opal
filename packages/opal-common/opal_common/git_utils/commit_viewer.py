@@ -138,11 +138,13 @@ class CommitViewer:
     """This class allows us to view the repository files and directories from
     the perspective of a specific git commit (i.e: version).
 
-    i.e: if in the latest commit we removed a file called `a.txt`, we will
-    see it while initializing CommitViewer with commit=HEAD~1, but we will
-    not see `a.txt` if we initialize the CommitViewer with commit=HEAD.
+    i.e: if in the latest commit we removed a file called `a.txt`, we
+    will see it while initializing CommitViewer with commit=HEAD~1, but
+    we will not see `a.txt` if we initialize the CommitViewer with
+    commit=HEAD.
 
-    The viewer also allows us to filter out certain paths of the commit tree.
+    The viewer also allows us to filter out certain paths of the commit
+    tree.
     """
 
     def __init__(self, commit: Commit):
