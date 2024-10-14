@@ -22,8 +22,3 @@ repos:
     hooks:
       - id: codespell
         args: [--skip, "*.json"]
-  - repo: https://github.com/PyCQA/docformatter
-    rev: v1.7.1
-    hooks:
-      - id: docformatter
-        language: python
