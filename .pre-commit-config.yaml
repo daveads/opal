@@ -20,8 +20,7 @@ repos:
         args: [--skip, "*.json"]
         
   - repo: https://github.com/PyCQA/docformatter
-    #rev: v1.7.1
-    rev: 06907d0
+    rev: v1.7.1
     hooks:
       - id: docformatter
         args: [--in-place]
