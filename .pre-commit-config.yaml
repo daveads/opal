@@ -2,10 +2,11 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
-      - id: python
       - id: check-yaml
       - id: end-of-file-fixer
       - id: trailing-whitespace
+        language: python
+
   - repo: https://github.com/psf/black
     rev: 23.1.0
     hooks:
