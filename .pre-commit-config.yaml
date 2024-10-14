@@ -18,8 +18,9 @@ repos:
     hooks:
       - id: codespell
         args: [--skip, "*.json"]
-  - repo: https://github.com/myint/docformatter
-    rev: v1.5.1
+
+  - repo: https://github.com/s-weigand/docformatter
+    rev: 1ec30b7
     hooks:
       - id: docformatter
         args: [--in-place]
