@@ -131,8 +131,10 @@ def emport_by_class(from_path, cls, import_items=None):
 
     :param from_path: dot separated package path
     :param cls: class to filter import contents by
-    :param import_items: the items to import form the package path (can also be ['*'])
-    :return: an Emport object with contents filtered according to given cls
+    :param import_items: the items to import form the package path (can
+        also be ['*'])
+    :return: an Emport object with contents filtered according to given
+        cls
     """
     import_items = import_items or ["*"]
     module_obj = __import__(from_path, globals(), locals(), import_items, 0)
@@ -155,8 +157,10 @@ def emport_objects_by_class(from_path, cls, import_items=None):
 
     :param from_path: dot separated package path
     :param cls: class to filter import contents by
-    :param import_items: the items to import form the package path (can also be ['*'])
-    :return: an Emport object with contents filtered according to given cls
+    :param import_items: the items to import form the package path (can
+        also be ['*'])
+    :return: an Emport object with contents filtered according to given
+        cls
     """
     results = []
     import_items = import_items or ["*"]
@@ -174,10 +178,9 @@ def emport_objects_by_class(from_path, cls, import_items=None):
 
 
 def dynamic_all(init_file_path):
-    """return a list of all the py files in a dir usage (in __init__.py file) :
+    """Return a list of all the py files in a dir usage (in __init__.py file) :
 
-    from emport import dynamic_all
-    __all__ = dynamic_all(__file__)
+    from emport import dynamic_all __all__ = dynamic_all(__file__)
     """
     modules = glob.glob(os.path.join(os.path.dirname(init_file_path), "*.py*"))
     target_modules = set([])
