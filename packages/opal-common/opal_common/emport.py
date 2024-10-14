@@ -71,9 +71,8 @@ class Emport(object):
         return self._members
 
     def get_flat_list(self):
-        """
-        :return: all the members of this Emport (And submodules) as one list
-        """
+        """:return: all the members of this Emport (And submodules) as one
+        list."""
         res = []
         for member in self._members:
             # if a member is an Emport itself flatten it as well
@@ -88,8 +87,9 @@ class Emport(object):
 
 
 def get_caller_module(depth=0):
-    """
-    :param depth: stack depth of the caller. 0 == yourself, 1 == your parent
+    """:param depth: stack depth of the caller.
+
+    0 == yourself, 1 == your parent
     :return: the module object of the caller function (in set stack depth)
     """
     with PyFrame() as frame:
@@ -115,8 +115,9 @@ def co_to_dict(co):
 
 
 def get_caller(depth=0):
-    """
-    :param depth: stack depth of the caller. 0 == yourself, 1 == your parent
+    """:param depth: stack depth of the caller.
+
+    0 == yourself, 1 == your parent
     :return: the frame object of the caller function (in set stack depth)
     """
     with PyFrame() as frame:
