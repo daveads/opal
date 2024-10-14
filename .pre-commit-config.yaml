@@ -22,4 +22,4 @@ repos:
     rev: v1.7.1
     hooks:
       - id: docformatter
-        args: [--in-place, --recursive]
+        args: [--in-place]
