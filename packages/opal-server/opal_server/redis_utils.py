@@ -22,8 +22,8 @@ class RedisDB:
         await self._redis.set(key, self._serialize(value))
 
     async def set_if_not_exists(self, key: str, value: BaseModel) -> bool:
-        """:param key:
-
+        """
+        :param key:
         :param value:
         :return: True if created, False if key already exists
         """
