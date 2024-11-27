@@ -2,9 +2,9 @@ name: OpenFGA Tests
 
 on:
   push:
-    branches: [ test ]
+    branches: [ ci-test ]
   pull_request:
-    branches: [ test ]
+    branches: [ ci-test ]
 
 jobs:
   test:
